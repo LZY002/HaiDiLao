@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FF9900"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+
+    />
+    <EditText
+            android:id="@+id/et_usename"
+            android:layout_width="307dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Nom"
+            android:textColor="#FFAD33"
+            android:textSize="16sp"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:drawableLeft="@drawable/compte"
+            android:drawablePadding="7dp"
+            android:maxLines="1"/>
+    <EditText
+            android:id="@+id/et_password"
+            android:layout_width="307dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFAD33"
+            android:textSize="16sp"
+            android:background="@drawable/bg_username"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="7dp"
+            android:maxLines="1"
+            android:layout_below="@+id/et_usename"/>
+    <Button
+            android:id="@+id/bt_register"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bt_register"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="119dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

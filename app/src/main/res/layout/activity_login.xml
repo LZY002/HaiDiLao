@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        android:orientation="vertical">
+    <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FF9900"
+            android:src="@drawable/wait"
+            android:scaleType="centerCrop"
+    />
+
+    <TextView
+            android:id="@+id/tv_tabletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table Type"
+            android:textSize="20sp"
+            android:padding="3dp"
+            android:background="#D5D5D5"
+            android:layout_below="@+id/tv_sayhello"/>
+    <TextView
+            android:id="@+id/tv_waitetable"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Waiting Tables"
+            android:textSize="20sp"
+            android:padding="3dp"
+            android:background="#D5D5D5"
+            android:layout_below="@+id/tv_sayhello"
+            android:layout_toEndOf="@+id/tv_tabletype"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+    />
+    <TextView
+            android:id="@+id/tv_waitetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting Time"
+            android:textSize="20sp"
+            android:padding="3dp"
+            android:background="#D5D5D5"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_sayhello"
+            android:layout_toRightOf="@id/tv_waitetable"
+            android:gravity="center"
+    />
+
+
+    <TextView
+            android:id="@+id/tv_sayhello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="Name"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_background"/>
+
+    <TextView
+            android:id="@+id/tv_smallTable"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_tabletype"
+            android:text="Small Table          (1-2)"
+            android:textSize="16sp"
+            android:background="#FFDDDD"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:id="@+id/tv_middleTable"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_smallTable"
+            android:text="Middle Table         (3-4)"
+            android:background="#FFEEEE"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentStart="true"
+            />
+    <TextView
+            android:id="@+id/tv_bigTable"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_middleTable"
+            android:text="Big Table               (>5)"
+            android:background="#FFDDDD"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentStart="true"
+    />
+
+    <TextView
+            android:id="@+id/tv_numberperson"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Choose the number of people eating"
+            android:textSize="16sp"
+            android:background="#FFCCCC"
+            android:layout_below="@+id/tv_bigTable" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:id="@+id/tv_smallTableNumber"
+            android:layout_width="156dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_tabletype"
+            android:text="3 tables"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:background="#FFDDDD"
+            android:layout_toEndOf="@+id/tv_middleTable"/>
+    <TextView
+            android:id="@+id/tv_middleTableNumber"
+            android:layout_width="156dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_smallTableNumber"
+            android:text="4 tables"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/tv_middleTable"
+            android:background="#FFEEEE"
+    />
+    <TextView
+            android:id="@+id/tv_bigTableNumber"
+            android:layout_width="156dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/tv_middleTableNumber"
+            android:text="5 tables"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:background="#FFDDDD"
+            android:layout_toEndOf="@+id/tv_tabletype"/>
+    <TextView
+            android:id="@+id/tv_smallTableTime"
+            android:layout_width="123dp"
+            android:layout_height="49dp"
+            android:text="5 minutes"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:layout_below="@id/tv_waitetime"
+            android:layout_alignParentEnd="true"
+
+
+
+    />
+    <TextView
+            android:id="@+id/tv_middleTableTime"
+            android:layout_width="123dp"
+            android:layout_height="49dp"
+            android:text="3 minutes"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+
+            android:layout_toStartOf="@id/tv_middleTableNumber"
+            android:layout_below="@+id/tv_smallTableTime"/>
+    <TextView
+            android:id="@+id/tv_bigTableTime"
+            android:layout_width="123dp"
+            android:layout_height="49dp"
+            android:text="4 minutes"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:layout_above="@+id/tv_numberperson"
+            android:layout_alignParentEnd="true"
+
+    />
+
+
+    <RadioGroup
+            android:id="@+id/chosepeoplenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_below="@+id/tv_numberperson"
+            android:padding="20dp" android:layout_centerHorizontal="true">
+        <RadioButton
+                android:id="@+id/onetwopeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/rbt_chosepeoplenumber"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="one-two"
+
+
+        />
+        <RadioButton
+                android:id="@+id/threefourpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rbt_chosepeoplenumber"
+                android:text="three-four"/>
+        <RadioButton
+                android:id="@+id/morethanfivepeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rbt_chosepeoplenumber"
+                android:button="@null"
+                android:text="more than five"
+
+
+        />
+
+
+    </RadioGroup>
+    <Button
+            android:id="@+id/bt_takeTheNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:background="@drawable/bt_takethequeue"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Take the queue"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:layout_below="@+id/chosepeoplenumber" android:layout_centerHorizontal="true"/>
+    <Button
+            android:id="@+id/bt_backtologin"
+            android:layout_width="69dp"
+            android:layout_height="26dp"
+            android:background="@drawable/bt_takethequeue"
+            android:padding="5dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:layout_below="@+id/tv_attention"/>
+    <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you pass the number, please re-queue, thank you for your cooperation !"
+            android:padding="3dp"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/bt_takeTheNumber" android:layout_marginTop="0dp"/>
+
+</RelativeLayout>
