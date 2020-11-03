@@ -1,2 +1,2 @@
 # HaiDiLao
-[Introduction](www.baidu.com)
+[Introduction](https://github.com/LZY002/HaiDiLao/wiki)
