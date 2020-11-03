@@ -1,2 +1,2 @@
 # HaiDiLao
-[Introduction](https://github.com/LZY002/HaiDiLao/wiki)
+## [Introduction](https://github.com/LZY002/HaiDiLao/wiki)
